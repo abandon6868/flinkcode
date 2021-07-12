@@ -14,8 +14,8 @@ import org.apache.flink.table.descriptors.Kafka;
 import org.apache.flink.table.descriptors.Schema;
 import org.apache.flink.util.Collector;
 import org.apache.kafka.clients.producer.ProducerConfig;
-
 import static org.apache.flink.table.api.Expressions.$;
+
 
 public class Flink09SQL_WordCount {
     public static void main(String[] args) throws Exception {
@@ -41,9 +41,10 @@ public class Flink09SQL_WordCount {
         tableEnv.createTemporaryView("wordCount",wordToOnes,$("word"),$("cnt"));
 
         // 查询数据，并按照word进行分组
-        Table select = tableEnv.sqlQuery("select word,count(word) from wordCount group by word");
-//        Table select = tableEnv.sqlQuery("select word,cnt from wordCount");
+        Table select = tableEnv.sqlQuery("select word,cnt from wordCount");
+//        Table select = tableEnv.sqlQuery("select word,count(word) from wordCount group by word");
 //        tableEnv.toRetractStream(select, Row.class).print();
+
         // 使用kafka作为source 消费数据
         tableEnv.connect(new Kafka()
                     .version("universal")
@@ -54,7 +55,9 @@ public class Flink09SQL_WordCount {
                     .field("word", DataTypes.STRING())
                     .field("count",DataTypes.BIGINT()))
                 .withFormat(new Json())
+                .inAppendMode()
                 .createTemporaryTable("WordCount");
+
         // 使用ES连接器
         tableEnv.connect(new Elasticsearch()
                     .version("6")
@@ -63,11 +66,14 @@ public class Flink09SQL_WordCount {
                     .bulkFlushMaxActions(1)
                     .host("hadoop102",9200,"http"))
                 .withSchema(new Schema()
-                        .field("word",DataTypes.STRING())
+                        .field("word", DataTypes.STRING())
                         .field("count",DataTypes.BIGINT())
                 ).withFormat(new Json())
+                .inUpsertMode()
                 .createTemporaryTable("wordCounts");
+        select.executeInsert("WordCount");
+        tableEnv.executeSql(
+                "insert into wordCounts select word,count(word) from WordCount group by word");
 
-        tableEnv.executeSql("insert into wordCounts select * from WordCount");
     }
 }
