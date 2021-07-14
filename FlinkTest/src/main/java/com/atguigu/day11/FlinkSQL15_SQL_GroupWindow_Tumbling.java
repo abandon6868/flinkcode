@@ -15,12 +15,12 @@ import org.apache.flink.types.Row;
 import java.time.Duration;
 
 import static org.apache.flink.table.api.Expressions.$;
-import static org.apache.flink.table.api.Expressions.lit;
+import static org.apache.flink.table.api.Expressions.rowInterval;
 
 /**
  * Flink-窗口操作(OverWindow  从第一行到当前行开窗)
  */
-public class FlinkSQL13_TableAPI_OverWindow_Unbounded {
+public class FlinkSQL15_SQL_GroupWindow_Tumbling {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
@@ -48,6 +48,7 @@ public class FlinkSQL13_TableAPI_OverWindow_Unbounded {
         SingleOutputStreamOperator<WaterSensor> waterSensorWaterMarkDS =
                 waterSensorDS.assignTimestampsAndWatermarks(watermarkStrategy);
 
+
         // 将流转换为动态表,并指定那个处理时间字段
         Table table = tableEnv.fromDataStream(waterSensorWaterMarkDS,
                 $("id"),
@@ -55,14 +56,21 @@ public class FlinkSQL13_TableAPI_OverWindow_Unbounded {
                 $("vc"),
                 $("pt").proctime());
 
-        //4.开启Over往前无界窗口
-        Table result = table.window(Over.partitionBy($("id"))  // 分区可选参数
-                .orderBy($("pt"))  // 必须参数 按照那么字段排序
-                .as("ow"))
-                .select($("id"),
-                        $("vc").sum().over($("ow")));
+        // 注册临时表
+/*        tableEnv.createTemporaryView("wordCount",table);
+        Table result = tableEnv.sqlQuery("select id,count(id) from wordCount group by id");
+        result.execute().print();
+        //tableEnv.toRetractStream(result,Row.class).print();*/
 
-        tableEnv.toAppendStream(result, Row.class).print();
+        Table result = tableEnv.sqlQuery("select " +
+                "id," +
+                "count(id)," +
+                "tumble_start(pt, INTERVAL '5' second) " + // 窗口开始时间
+                "as windowStart from " +
+                table +
+                " group by id,tumble(pt, INTERVAL '5' second)");
+         tableEnv.toAppendStream(result, Row.class).print();
+
         env.execute();
     }
 }
