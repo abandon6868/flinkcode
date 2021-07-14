@@ -49,6 +49,7 @@ public class FlinkSQL13_TableAPI_OverWindow_Unbounded {
                 waterSensorDS.assignTimestampsAndWatermarks(watermarkStrategy);
 
 
+
         // 将流转换为动态表,并指定那个处理时间字段
         Table table = tableEnv.fromDataStream(waterSensorWaterMarkDS,
                 $("id"),
@@ -59,10 +60,9 @@ public class FlinkSQL13_TableAPI_OverWindow_Unbounded {
         //4.开启Over往前无界窗口
         Table result = table.window(Over.partitionBy($("id"))  // 分区可选参数
                 .orderBy($("pt"))  // 必须参数 按照那么字段排序
-                    .as("ow"))
+                .as("ow"))
                 .select($("id"),
-                            $("vc").sum().over($("ow")));
-
+                        $("vc").sum().over($("ow")));
 
         tableEnv.toAppendStream(result, Row.class).print();
         env.execute();
