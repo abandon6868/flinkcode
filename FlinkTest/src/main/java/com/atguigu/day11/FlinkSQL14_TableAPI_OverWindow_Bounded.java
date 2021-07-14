@@ -64,7 +64,6 @@ public class FlinkSQL14_TableAPI_OverWindow_Bounded {
                 .select($("id"),
                             $("vc").sum().over($("ow")));
 
-
         tableEnv.toAppendStream(result, Row.class).print();
         env.execute();
     }
