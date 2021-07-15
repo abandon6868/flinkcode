@@ -60,7 +60,8 @@ public class FlinkSQL16_SQL_GroupWindow_Hop {
         Table result = tableEnv.sqlQuery("select " +
                 "id," +
                 "count(id) as ct," +
-                "hop_start(pt,INTERVAL '2' second, INTERVAL '6' second) as windowStart from " + // 注意与排序的不同
+                // 注意与排序的不同,而且第一个滑动步长，第二个为窗口大小
+                "hop_start(pt,INTERVAL '2' second, INTERVAL '6' second) as windowStart from " +
                 table +
                 " group by id,hop(pt,INTERVAL '2' second, INTERVAL '6' second)");
 
