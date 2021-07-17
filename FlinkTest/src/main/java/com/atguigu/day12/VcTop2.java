@@ -4,10 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
-public class SumCount {
-    private int sum;
-    private int count;
+public class VcTop2 {
+    private int topOne;
+    private int topTwo;
 }
