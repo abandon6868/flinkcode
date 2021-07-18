@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="60f994bb-359c-4ac4-92b6-7286245b61fb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1teKLLOYVAkUbwUp2bud8TBfKK3" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/input" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.3954023" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\myFlink\FlinkTest\input" />
+      <recent name="F:\myFlink\FlinkTest\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.bean" />
+      <recent name="com.atguigu.day05" />
+      <recent name="com.atguigu.day04" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.atguigu.day02" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Flink07_WordCount_Slide_SideOutPut">
+    <configuration name="Flink06_State_Operator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.day06.Flink06_State_Operator" />
+      <module name="FlinkTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.day06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Flink06_WordCount_Slide_SideOutPut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.practice.Flink06_WordCount_Slide_SideOutPut" />
+      <module name="FlinkTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Flink07_State_BroadCastState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.day06.Flink07_State_BroadCastState" />
+      <module name="FlinkTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.day06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Flink07_WordCount_Slide_SideOutPut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.practice.Flink07_WordCount_Slide_SideOutPut" />
+      <module name="FlinkTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Flink08_State_WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.day06.Flink08_State_WordCount" />
+      <module name="FlinkTest" />
+      <option name="VM_PARAMETERS" value="-DHADOOP_USER_NAME=ssx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.day06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Flink06_State_Operator" />
+      <item itemvalue="Application.Flink07_State_BroadCastState" />
+      <item itemvalue="Application.Flink08_State_WordCount" />
+      <item itemvalue="Application.Flink06_WordCount_Slide_SideOutPut" />
+      <item itemvalue="Application.Flink07_WordCount_Slide_SideOutPut" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Flink07_WordCount_Slide_SideOutPut" />
+        <item itemvalue="Application.Flink06_WordCount_Slide_SideOutPut" />
+        <item itemvalue="Application.Flink08_State_WordCount" />
+        <item itemvalue="Application.Flink07_State_BroadCastState" />
+        <item itemvalue="Application.Flink06_State_Operator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60f994bb-359c-4ac4-92b6-7286245b61fb" name="Default Changelist" comment="" />
+      <created>1623124057836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623124057836</updated>
+      <workItem from="1623124060893" duration="8443000" />
+      <workItem from="1623166714337" duration="8578000" />
+      <workItem from="1623940762326" duration="4301000" />
+      <workItem from="1624093614024" duration="27376000" />
+      <workItem from="1624202242469" duration="4640000" />
+      <workItem from="1624280200749" duration="11003000" />
+      <workItem from="1624365300227" duration="13722000" />
+      <workItem from="1624451819018" duration="14217000" />
+      <workItem from="1624493953578" duration="12838000" />
+      <workItem from="1624582340057" duration="175000" />
+      <workItem from="1624716708768" duration="21719000" />
+      <workItem from="1624842795600" duration="10132000" />
+      <workItem from="1624973427773" duration="8889000" />
+      <workItem from="1625061396703" duration="6481000" />
+      <workItem from="1625147723573" duration="9889000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Auto_Import" timestamp="1623161998095">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Auto_Import/0.0.1536.824@0.0.1536.824" timestamp="1623161998095" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625149413316">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1625149413316" />
+    <state x="574" y="0" width="495" height="824" key="#com.intellij.ide.util.MemberChooser" timestamp="1625242555519">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="0" width="495" height="824" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1625242555519" />
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1624458994840">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1624458994840" />
+    <state x="544" y="153" key="FileChooserDialogImpl" timestamp="1623157753003">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="544" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1623157753003" />
+    <state width="1477" height="276" key="GridCell.Tab.0.bottom" timestamp="1625244041574">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1477" height="276" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1625244041574" />
+    <state width="1477" height="276" key="GridCell.Tab.0.center" timestamp="1625244041574">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1477" height="276" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1625244041574" />
+    <state width="1477" height="276" key="GridCell.Tab.0.left" timestamp="1625244041574">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1477" height="276" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1625244041574" />
+    <state width="1477" height="276" key="GridCell.Tab.0.right" timestamp="1625244041574">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1477" height="276" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1625244041574" />
+    <state width="1492" height="288" key="GridCell.Tab.1.bottom" timestamp="1624379883779">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="288" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624379883779" />
+    <state width="1492" height="288" key="GridCell.Tab.1.center" timestamp="1624379883779">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="288" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1624379883779" />
+    <state width="1492" height="288" key="GridCell.Tab.1.left" timestamp="1624379883779">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="288" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1624379883779" />
+    <state width="1492" height="288" key="GridCell.Tab.1.right" timestamp="1624379883779">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="288" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1624379883779" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1625282501362">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1625282501362" />
+    <state x="182" y="2" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1624800200406">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="182" y="2" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1624800200406" />
+    <state x="178" y="107" key="new project wizard" timestamp="1624174181205">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="107" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1624174181205" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1624369476937">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1624369476937" />
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup" timestamp="1624804944133">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1624804944133" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atguigu/day02/Flink14_TransForm_Max.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

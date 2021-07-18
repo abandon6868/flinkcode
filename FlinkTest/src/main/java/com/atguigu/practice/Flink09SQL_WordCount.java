@@ -42,8 +42,6 @@ public class Flink09SQL_WordCount {
 
         // 查询数据，并按照word进行分组
         Table select = tableEnv.sqlQuery("select word,cnt from wordCount");
-//        Table select = tableEnv.sqlQuery("select word,count(word) from wordCount group by word");
-//        tableEnv.toRetractStream(select, Row.class).print();
 
         // 使用kafka作为source 消费数据
         tableEnv.connect(new Kafka()
