@@ -16,7 +16,7 @@ import static org.apache.flink.table.api.Expressions.call;
 
 
 // 按照id分组，求每个id的最高2位水位线
-public class FlinkSQL05_Function_UDTAF {
+public class FlinkSQL06_Function_UDTAF {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
