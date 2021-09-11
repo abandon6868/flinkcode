@@ -22,14 +22,14 @@ public class Flink07_State_BroadCastState {
 
         // 将8888端口的数据广播出去,创建一个广播流
         MapStateDescriptor<String, String> mapStateDescriptor = new MapStateDescriptor<>("map-state", String.class, String.class);
-        BroadcastStream<String> broadcastStream = dataStreamSource1.broadcast(
-                mapStateDescriptor);
+        BroadcastStream<String> broadcastStream = dataStreamSource1.broadcast(mapStateDescriptor);
 
         // 将两个流进行连接
         BroadcastConnectedStream<String, String> connectedStream = dataStreamSource.connect(broadcastStream);
 
         // 对流做处理
-        SingleOutputStreamOperator<String> streamOperator = connectedStream.process(new BroadcastProcessFunction<String, String, String>() {
+        SingleOutputStreamOperator<String> streamOperator = connectedStream.process(
+                new BroadcastProcessFunction<String, String, String>() {
             @Override
             public void processElement(String value, ReadOnlyContext ctx, Collector<String> out) throws Exception {
                 // 从广播状态中取值, 不同的值做不同的业务
